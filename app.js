@@ -46,3 +46,37 @@ document.querySelectorAll("#navLinks a").forEach(link=>{
     });
 
 });
+
+
+// Favourites //
+
+function goToFav() {
+    window.location.href = "Pages/favourites.html";
+}
+
+// cart //
+
+function goToCart() {
+    window.location.href = "Pages/cart.html";
+}
+
+// hover
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInp");
+
+searchBtn.addEventListener("mouseenter", () => {
+    searchInput.classList.add("active");
+});
+
+searchBtn.addEventListener("mouseleave", () => {
+    searchInput.classList.remove("active");
+});
+
+
+
+
+
+// collection //
+function goTOCollection() {
+    window.location.href = "Pages/shop.html";
+}

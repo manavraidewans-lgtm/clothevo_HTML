@@ -378,6 +378,22 @@ form {
 }
 
 
+#searchInp {
+    width: 0;
+    opacity: 0;
+    padding: 0.3rem;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.8s ease;
+}
+
+#searchInp.active {
+    width: 14rem;
+    opacity: 1;
+}
+
 
 
 
@@ -717,3 +733,9 @@ header{
 }
 
 }
+
+
+
+
+
+

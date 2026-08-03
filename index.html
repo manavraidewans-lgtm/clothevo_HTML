@@ -42,19 +42,20 @@
             <div class="navbar-icons">
                 <span>
 
-                    <button>
+                    <button id="searchBtn">
                         <i class="ri-search-line"></i>
+                        <input type="text" id="searchInp" placeholder="Search Your Item">
                     </button>
                     
                     <button id="login-btn">
                         <i class="ri-user-line"></i>
                     </button>
 
-                    <button>
+                    <button onclick="goToFav()">
                         <i class="ri-heart-line"></i>
                     </button>
 
-                    <button>
+                    <button onclick="goToCart()">
                         <i class="ri-shopping-bag-line"></i>
                     </button>
 
@@ -89,7 +90,7 @@
                     <i class="ri-fire-line"></i>
                 </button>
 
-                <button id="collection">
+                <button id="collection" onclick="goTOCollection()">
                     Explore Collections
                     <i class="ri-arrow-right-long-line"></i>
                 </button>
@@ -163,7 +164,7 @@
     <!--Main Body Start from here-->
     <main>
 
-        
+
 
 
     </main>

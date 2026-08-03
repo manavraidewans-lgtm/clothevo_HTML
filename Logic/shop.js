@@ -46,3 +46,17 @@ document.querySelectorAll("#navLinks a").forEach(link=>{
     });
 
 });
+
+
+// Favourites //
+
+function goToFav() {
+    window.location.href = "../Pages/favourites.html";
+}
+
+// cart //
+
+function goToCart() {
+    window.location.href = "../Pages/cart.html";
+}
+
