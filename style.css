@@ -595,6 +595,135 @@ form {
 
 
 
+/*      Trending        */
+#trending {
+    height: 55vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+.trending-outer {
+    height: 90%;
+    width: 90%;
+    /* background-color: fuchsia; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trending-up {
+    height: 20%;
+    width: 100%;
+    /* background-color: mediumaquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.trending-up h1 {
+    color: rgb(87, 86, 86);
+}
+
+.trending-middle {
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(197, 120, 6); */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.trending-middle button {
+    padding: 0.3rem 1.4rem;
+    font-size: 1rem;
+    color: grey;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#trend-all {
+    color: black;
+    font-weight: 700;
+}
+
+.trending-down {
+    height: 60%;
+    width: 100%;
+    /* background-color: rgb(62, 20, 179); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.trend-card {
+    height: 100%;
+    width: 15%;
+    /* background-color: darkslategrey; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.trend-card img {
+    height: 80%;
+    width: 100%;
+}
+
+.trend-text {
+    height: 20%;
+    width: 100%;
+    /* background-color: khaki; */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.trend-text h4 {
+    color: grey;
+    font-weight: 700;
+}
+
+.trend-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.trend-des p {
+    color: grey;
+}
+
+.trend-des i {
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -638,35 +767,48 @@ form {
         font-size:2.2rem;
     }
 
+    #trending{
+        height:auto;
+        padding:3rem 0;
+    }
+
+    .trending-outer{
+        width:95%;
+    }
+
+    .trend-card{
+        width:15.5%;
+    }
+
 }
 
 
 @media (max-width:992px){
 
-.hero-content{
-    left:35%;
-    width:60%;
-}
+    .hero-content{
+        left:35%;
+        width:60%;
+    }
 
-.hero-content h1{
-    font-size:2.7rem;
-}
+    .hero-content h1{
+        font-size:2.7rem;
+    }
 
-.hero-content p{
-    font-size:1rem;
-}
+    .hero-content p{
+        font-size:1rem;
+    }
 
-.navbar-links ul li a{
-    font-size:1rem;
-}
+    .navbar-links ul li a{
+        font-size:1rem;
+    }
 
-.navbar-icons span{
-    gap:1rem;
-}
+    .navbar-icons span{
+        gap:1rem;
+    }
 
-.details-outside{
-    grid-template-columns:repeat(2,1fr);
-}
+    .details-outside{
+        grid-template-columns:repeat(2,1fr);
+    }
 
     .category-down{
         flex-wrap:wrap;
@@ -676,6 +818,22 @@ form {
     .categories-card{
         width:48%;
         height:300px;
+    }
+
+    #trending{
+        height:auto;
+        padding:3rem 0;
+    }
+
+    .trending-down{
+        flex-wrap:wrap;
+        gap:1.5rem;
+        justify-content:center;
+    }
+
+    .trend-card{
+        width:30%;
+        height:330px;
     }
 
 }
@@ -855,6 +1013,28 @@ form {
         font-size:2rem;
     }
 
+    .trending-up{
+        flex-direction:column;
+        gap:1rem;
+        text-align:center;
+    }
+
+    .trending-middle{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:1rem;
+    }
+
+    .trending-down{
+        flex-wrap:wrap;
+        gap:1.5rem;
+    }
+
+    .trend-card{
+        width:45%;
+        height:320px;
+    }
+
     
 }
 
@@ -926,6 +1106,11 @@ header{
         font-size:1rem;
     }
 
+    .trend-card{
+        width:80%;
+        height:340px;
+    }
+
 }
 
 
@@ -995,6 +1180,34 @@ header{
 
 
 
+@media (max-width:480px){
+
+    #trending{
+        padding:2rem 1rem;
+    }
+
+    .trending-up h1{
+        font-size:1.8rem;
+    }
+
+    .trending-middle{
+        gap:.8rem;
+    }
+
+    .trending-middle button{
+        font-size:.9rem;
+        padding:.4rem 1rem;
+    }
+
+    .trend-card{
+        width:95%;
+        height:330px;
+    }
+
+}
+
+
+
 @media (max-width:375px){
 
 .hero-content h1{
@@ -1028,6 +1241,18 @@ header{
         font-size:.9rem;
     }
 
+    .trend-card{
+        height:300px;
+    }
+
+    .trend-text h4{
+        font-size:1rem;
+    }
+
+    .trend-des p{
+        font-size:.9rem;
+    }
+
 }
 
 
@@ -1036,25 +1261,25 @@ header{
 
 @media (max-width:320px){
 
-.hero-content{
-    width:96%;
-}
+    .hero-content{
+        width:96%;
+    }
 
-.hero-content h1{
-    font-size:1.4rem;
-}
+    .hero-content h1{
+        font-size:1.4rem;
+    }
 
-.hero-content p{
-    font-size:.8rem;
-}
+    .hero-content p{
+        font-size:.8rem;
+    }
 
-.navbar-icons span{
-    gap:.3rem;
-}
+    .navbar-icons span{
+        gap:.3rem;
+    }
 
-.navbar-icons button{
-    padding:.2rem;
-}
+    .navbar-icons button{
+        padding:.2rem;
+    }
 
     .category-up h1{
         font-size:1.4rem;
@@ -1066,6 +1291,15 @@ header{
 
     .text h3{
         font-size:1.2rem;
+    }
+
+    .trending-up h1{
+        font-size:1.5rem;
+    }
+
+    .trend-card{
+        width:100%;
+        height:280px;
     }
 
 }
