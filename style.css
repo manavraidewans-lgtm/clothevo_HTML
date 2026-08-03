@@ -5,14 +5,18 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body {
-    background-color: rgb(223, 208, 208)
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /*       HEADER      */
 header {
-    min-height:100vh;
+    min-height: 90vh;
     width: 100%;
     /* background-color: rgb(189, 230, 230); */
     overflow: hidden;
@@ -25,7 +29,7 @@ header {
     position:absolute;
     inset: 0;
     width:100%;
-    height: 90%;
+    height: 100%;
     object-fit:cover;
     z-index:-2;
 }
@@ -401,7 +405,67 @@ form {
 
 
 
+/*          DETAILS         */
+#details {
+    width:100%;
+    padding: 2rem 5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
+.details-outside {
+    width:100%;
+    max-width:1400px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+}
+
+.details-card {
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    padding:1.5rem;
+    background:#fff;
+    border-radius:12px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.details-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+
+.details-card-left {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.details-card-left i {
+    font-size:2.5rem;
+    color:grey;
+}
+
+
+.details-card-right {
+    display:flex;
+    flex-direction:column;
+    gap:.3rem;
+}
+
+.details-card-right p {
+    color: grey;
+    font-size: 0.95rem;
+}
+
+#details-head {
+    font-weight: 700;
+    color: grey;
+}
 
 
 
@@ -467,6 +531,10 @@ form {
 
 .navbar-icons span{
     gap:1rem;
+}
+
+.details-outside{
+    grid-template-columns:repeat(2,1fr);
 }
 
 }
@@ -597,6 +665,31 @@ form {
         margin-right:15px;
     }
 
+    #details{
+        padding:2rem 1rem;
+    }
+
+    .details-outside{
+        grid-template-columns:1fr;
+        gap:1rem;
+    }   
+
+    .details-card{
+        padding:1rem;
+    }
+
+    .details-card-left i{
+        font-size:2rem;
+    }       
+
+    #details-head{
+        font-size:1rem;
+    }
+
+    .details-card-right p{
+        font-size:.9rem;
+    }
+
 }
 
 
@@ -634,6 +727,19 @@ header{
 }
 
 .login-heading h1{
+    font-size:2.2rem;
+}
+
+.details-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.details-card-right{
+    align-items:center;
+}
+
+.details-card-left i{
     font-size:2.2rem;
 }
 
