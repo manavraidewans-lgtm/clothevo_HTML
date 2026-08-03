@@ -12,3 +12,37 @@ closeLogin.addEventListener("click" , () => {
     loginBox.classList.remove("open");
 });
 
+
+
+
+
+
+
+// hamburger //
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        hamburger.innerHTML = '<i class="ri-close-line"></i>';
+    }
+    else{
+        hamburger.innerHTML = '<i class="ri-menu-3-line"></i>';
+    }
+
+});
+
+document.querySelectorAll("#navLinks a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+        hamburger.innerHTML='<i class="ri-menu-3-line"></i>';
+
+    });
+
+});

@@ -209,9 +209,17 @@ header {
 
 
 
+/* HAMBURGER */
 
+.hamburger{
+    display:none;
+    cursor:pointer;
+}
 
-
+.hamburger i{
+    font-size:2rem;
+    color:#fff;
+}
 
 
 
@@ -508,21 +516,70 @@ form {
 }
 
 .form-card{
-    width:90%;
-    flex-direction:column;
-    align-items:flex-start;
-    gap:.5rem;
-}
+        width:90%;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:.5rem;
+    }
 
-.form-card input{
-    width:100%;
-    height:45px;
-}
+    .form-card input{
+        width:100%;
+        height:45px;
+    }
 
-.remember-me{
-    width:90%;
-    justify-content:flex-start;
-}
+    .remember-me{
+        width:90%;
+        justify-content:flex-start;
+    }
+
+    
+     .hamburger{
+        display:block;
+        z-index:1001;
+    }
+
+    .navbar-links{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width: 50%;
+        height:100vh;
+        /* background:#111; */
+        backdrop-filter: blur(14px);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        transition:.4s;
+        z-index:1000;
+    }
+
+    .navbar-links.active{
+        right:0;
+    }
+
+    .navbar-links ul{
+        display:flex;
+        flex-direction:column;
+        gap:4rem;
+        width:100%;
+        text-align:center;
+    }
+
+    .navbar-links ul li{
+        list-style:none;
+    }
+
+    .navbar-links ul li a{
+        color:white;
+        text-decoration:none;
+        font-size:1.3rem;
+        font-weight:900;
+    }
+
+    .navbar-icons{
+        margin-left:auto;
+        margin-right:15px;
+    }
 
 }
 
