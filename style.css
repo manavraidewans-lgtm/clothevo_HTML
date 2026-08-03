@@ -470,13 +470,127 @@ form {
 
 
 
+/*      Shop By Category        */
+
+#Category {
+    height: 55vh;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+.category-outer {
+    height: 90%;
+    width: 90%;
+    /* background-color: moccasin; */
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.category-up {
+    height: 15%;
+    width: 100%;
+    /* background-color: rgb(37, 171, 62); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.category-up h1 {
+    color: rgb(87, 86, 86);
+}
+
+#view-all-category {
+    padding: 0.5rem 1.7rem;
+    font-size: 1.1rem;
+    color: grey;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
 
 
+.category-down {
+    height: 80%;
+    width: 100%;
+    /* background-color: rgb(22, 64, 188); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.categories-card{
+    height: 90%;
+    width: 23%;
+    background-color: moccasin;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    transition: all 0.4s linear;
+}
+
+.categories-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.text {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    backdrop-filter: blur(1px);
+    
+}
+
+.text h3 {
+    color: goldenrod;
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+.text button {
+    border: none;
+    outline: none;
+    color: grey;
+    background: transparent;
+    font-weight: 900;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
 
+#cate-men {
+    background-image: url("Assets/cate\ Men.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
+#cate-women {
+    background-image: url("Assets/cate\ women.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#uni {
+    background-image: url("Assets/cate\ uni.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#asse {
+    background-image: url("Assets/asse.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -493,19 +607,36 @@ form {
 
 @media (max-width:1200px){
 
-.hero-content{
-    left:30%;
-    width:45%;
-}
+    .hero-content{
+        left:30%;
+        width:45%;
+    }
 
-.hero-content h1{
-    font-size:3rem;
-}
+    .hero-content h1{
+        font-size:3rem;
+    }
 
-.navbar-links ul{
-    width:100%;
-    gap:2rem;
-}
+    .navbar-links ul{
+        width:100%;
+        gap:2rem;
+    }
+
+    #Category{
+        height:auto;
+        padding:3rem 0;
+    }
+
+    .category-outer{
+        width:95%;
+    }
+
+    .text{
+        padding:2rem;
+    }
+
+    .text h3{
+        font-size:2.2rem;
+    }
 
 }
 
@@ -536,6 +667,16 @@ form {
 .details-outside{
     grid-template-columns:repeat(2,1fr);
 }
+
+    .category-down{
+        flex-wrap:wrap;
+        gap:1.5rem;
+    }
+
+    .categories-card{
+        width:48%;
+        height:300px;
+    }
 
 }
 
@@ -690,6 +831,31 @@ form {
         font-size:.9rem;
     }
 
+    .category-up{
+        flex-direction:column;
+        gap:1rem;
+        text-align:center;
+    }
+
+    .category-down{
+        justify-content:center;
+        gap:1.5rem;
+    }
+
+    .categories-card{
+        width:90%;
+        height:300px;
+    }
+
+    .text{
+        padding:2rem;
+    }
+
+    .text h3{
+        font-size:2rem;
+    }
+
+    
 }
 
 
@@ -743,6 +909,23 @@ header{
     font-size:2.2rem;
 }
 
+    .categories-card{
+        width:100%;
+        height:270px;
+    }
+
+    .text{
+        padding:1.5rem;
+    }
+
+    .text h3{
+        font-size:1.8rem;
+    }
+
+    .text button{
+        font-size:1rem;
+    }
+
 }
 
 
@@ -788,6 +971,26 @@ header{
     padding:.8rem;
 }
 
+    #Category{
+        padding:2rem 1rem;
+    }
+
+    .category-up h1{
+        font-size:1.7rem;
+    }
+
+    #view-all-category{
+        padding:.6rem 1.3rem;
+        font-size:1rem;
+    }
+
+    .categories-card{
+        height:240px;
+    }
+
+    .text h3{
+        font-size:1.5rem;
+    }
 }
 
 
@@ -809,6 +1012,21 @@ header{
 .hero-but button{
     padding:.8rem;
 }
+    .categories-card{
+        height:220px;
+    }
+
+    .text{
+        padding:1rem;
+    }
+
+    .text h3{
+        font-size:1.3rem;
+    }
+
+    .text button{
+        font-size:.9rem;
+    }
 
 }
 
@@ -837,6 +1055,18 @@ header{
 .navbar-icons button{
     padding:.2rem;
 }
+
+    .category-up h1{
+        font-size:1.4rem;
+    }
+
+    .categories-card{
+        height:200px;
+    }
+
+    .text h3{
+        font-size:1.2rem;
+    }
 
 }
 
