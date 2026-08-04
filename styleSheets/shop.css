@@ -348,12 +348,14 @@ form {
 
 /*      Main         */
 
-.main-outer {
-    margin-top: 5rem;
-    height: 95vh;
-    width: 100%;
-    /* background-color: aquamarine; */
-    gap: 1.5rem;
+.main-outer{
+    margin-top:5rem;
+    display:flex;
+    gap:20px;
+    padding:30px;
+    align-items:flex-start;
+
+    height:90vh;
 }
 
 .aside {
@@ -370,6 +372,7 @@ form {
     /* overflow: hidden; */
     padding: 1rem;
     gap: 6rem;
+    overflow-y:auto;
 }
 
 
@@ -435,11 +438,11 @@ form {
 
 
 .cards-section {
-    width:75%;
-    height:calc(100vh - 120px);
+    width:80%;
+    height:100%;
     display:flex;
     flex-direction:column;
-    overflow:hidden;
+    min-height:0;
 }
 
 .card-section-top {
@@ -450,6 +453,7 @@ form {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    flex:0 0 70px;
 }
 
 .card-section-top input {
@@ -488,19 +492,13 @@ form {
 
 
 
-.cards-outer{
-    flex:1;
-    width:100%;
-    overflow-y:auto;
-    overflow-x:hidden;
 
+.cards-outer{
+    width:100%;
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
     gap:1.5rem;
-
     padding:1rem;
-    border-radius:20px;
-    background:#f4f4f4;
 }
 
 .product-card{
