@@ -346,9 +346,95 @@ form {
 
 
 
+/*      Main         */
+
+.main-outer {
+    margin-top: 5rem;
+    height: 95vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    gap: 1.5rem;
+}
+
+.aside {
+    height: 90%;
+    width: 20%;
+    background-color: rgb(217, 190, 16);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.cards-section {
+    height: 95%;
+    width: 75%;
+    /* background-color: rgb(73, 179, 12); */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-section-top {
+    height: 10%;
+    width: 90%;
+    /* background-color: linen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-section-top input {
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.sort {
+    width: 30%;
+}
+
+.sort select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 70%;
+    border-radius: 20px;
+    padding-left: 0.3rem;
+    font-weight: 600;
+    color: grey;
+}
+
+.sort label {
+    color: grey;
+    font-weight: 700;
+}
 
 
 
+
+.cards-outer {
+    height: 80%;
+    width: 90%;
+    background-color: lawngreen;
+    border-radius: 20px;
+}
+
+.sort {
+    gap: 0.5rem;
+}
 
 
 
