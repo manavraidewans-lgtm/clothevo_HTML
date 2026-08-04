@@ -5,10 +5,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body {
-    background-color: rgb(212, 178, 178)
-}
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*       HEADER      */
@@ -388,6 +390,124 @@ form {
 
 
 
+/*      STORY       */
+#story {
+    margin-top: 3rem;
+    height: 50vh;
+    width: 100%;
+    /* background-color: palevioletred; */
+    
+}
+
+.story-outer {
+    height: 90%;
+    width: 90%;
+    /* background-color: lightpink; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.story-left {
+    height: 90%;
+    width: 40%;
+    /* background-color: midnightblue; */
+    background-image: url("../Assets/about\ store.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
+.story-right {
+    height: 90%;
+    width: 50%;
+    /* background-color: rgb(140, 215, 139); */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.story-right h3 {
+    color: gold;
+    font-size: 1.6rem;
+}
+
+.story-right h2 {
+    color: rgb(85, 85, 85);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.story-right p {
+    color: grey;
+}
+
+
+.story-icons {
+    height: 25%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-card {
+    height: 100%;
+    width: 33%;
+    /* background-color: palegoldenrod; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+.story-card:hover {
+    transform: translateY(-13px);
+}
+
+.story-card-left {
+    height: 100%;
+    width: 30%;
+}
+
+.story-card-left i {
+    font-size: 2rem;
+    color: rgb(94, 93, 93);
+}
+
+
+.story-card-right {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.story-card-right h4 {
+    color: rgb(94, 94, 94);
+}
+
+.story-card-right p {
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -419,6 +539,24 @@ form {
         font-size:2.2rem;
     }
 
+    #story{
+        height:auto;
+        padding:3rem 0;
+    }
+
+    .story-outer{
+        width:95%;
+    }
+
+    .story-left{
+        width:42%;
+        min-height:420px;
+    }
+
+    .story-right{
+        width:53%;
+    }
+
 }
 
 
@@ -448,6 +586,23 @@ form {
 
     .about-hero-content p{
         font-size:1.05rem;
+    }
+
+    .story-left{
+        width:45%;
+        min-height:380px;
+    }
+
+    .story-right{
+        width:50%;
+    }
+
+    .story-right h2{
+        font-size:1.8rem;
+    }
+
+    .story-icons{
+        gap:1rem;
     }
 }
 
@@ -580,6 +735,39 @@ form {
         font-size:1rem;
     }
 
+    #story{
+        height:auto;
+        padding:2rem 0;
+    }
+
+    .story-outer{
+        flex-direction:column;
+        gap:2rem;
+    }
+
+    .story-left{
+        width:100%;
+        min-height:350px;
+    }
+
+    .story-right{
+        width:100%;
+        padding:0;
+    }
+
+    .story-right h2{
+        font-size:1.7rem;
+    }
+
+    .story-icons{
+        width:100%;
+        justify-content:space-between;
+    }
+
+    .story-card{
+        width:32%;
+    }
+
 
 }
 
@@ -612,10 +800,56 @@ form {
         font-size:.95rem;
     }
 
+    .story-left{
+        min-height:300px;
+    }
+
+    .story-right h2{
+        font-size:1.5rem;
+    }
+
+    .story-icons{
+        flex-direction:column;
+        height:auto;
+        gap:1rem;
+    }
+
+    .story-card{
+        width:100%;
+        justify-content:flex-start;
+        gap:1rem;
+    }
+
+    .story-card-left{
+        width:15%;
+    }
+
+    .story-card-right{
+        width:85%;
+    }
+
 }
 
 
+@media (max-width:480px){
 
+    .story-left{
+        min-height:250px;
+    }
+
+    .story-right h3{
+        font-size:1.3rem;
+    }
+
+    .story-right h2{
+        font-size:1.3rem;
+    }
+
+    .story-right p{
+        font-size:.9rem;
+    }
+
+}
 
 
 
@@ -681,6 +915,19 @@ form {
     .about-hero-content p{
         font-size:.85rem;
     }   
+
+    .story-left{
+        min-height:220px;
+    }
+
+    .story-card-left i{
+        font-size:1.6rem;
+    }
+
+    .story-card-right h4{
+        font-size:1rem;
+    }
+
 }
 
 
@@ -696,7 +943,7 @@ form {
     .navbar-icons button{
         padding:.2rem;
     }
-    
+
     .about-hero-content{
         width:95%;
     }
@@ -707,6 +954,22 @@ form {
 
     .about-hero-but button{
         font-size:.85rem;
+    }
+
+    .story-left{
+        min-height:200px;
+    }
+
+    .story-right h2{
+        font-size:1.15rem;
+    }
+
+    .story-right p{
+        font-size:.85rem;
+    }
+
+    .story-card-right h4{
+        font-size:.9rem;
     }
 
 }
