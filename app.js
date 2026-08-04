@@ -18,6 +18,7 @@ closeLogin.addEventListener("click" , () => {
 
 
 
+
 // hamburger //
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
@@ -48,17 +49,26 @@ document.querySelectorAll("#navLinks a").forEach(link=>{
 });
 
 
+
 // Favourites //
 
 function goToFav() {
     window.location.href = "Pages/favourites.html";
 }
 
+
+
 // cart //
 
 function goToCart() {
     window.location.href = "Pages/cart.html";
 }
+
+
+
+
+
+
 
 // hover search
 const searchBtn = document.getElementById("searchBtn");
@@ -76,6 +86,7 @@ searchBtn.addEventListener("mouseleave", () => {
 
 
 
+
 // collection //
 function goTOCollection() {
     window.location.href = "Pages/shop.html";
@@ -86,3 +97,32 @@ function goTOCollection() {
 function trend() {
     window.location.href = "#trending";
 }
+
+
+
+// trend - oversize //
+
+const card = document.getElementById("oversize");
+const popup = document.getElementById("overside-pop");
+const popupImg = document.getElementById("popup-img");
+const closeBtn = document.getElementById("close");
+
+// Open Popup
+card.addEventListener("click", () => {
+    const img = card.querySelector("img");
+
+    popup.style.display = "flex";
+    popupImg.src = img.src;
+});
+
+// Close Button
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+// Close when clicking outside image
+popup.addEventListener("click", (e) => {
+    if(e.target === popup){
+        popup.style.display = "none";
+    }
+});

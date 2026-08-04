@@ -929,12 +929,123 @@ footer {
 
 
 
+/*POP 1*/
+#overside-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+
+    z-index: 9999;
+}
+
+#popup-img{
+    width: 45%;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+#close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.over-outer {
+    height: 80%;
+    width: 80%;
+    background-color: rgb(236, 237, 237);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.over-left {
+    height: 90%;
+    width: 45%;
+    /* background-color: aquamarine; */
+    background-image: url("https://images-static.nykaa.com/media/catalog/product/b/a/babcc29268310_1.jpg?tr=w-500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    border: 2px solid grey;
+}
+
+.over-right {
+    height: 90%;
+    width: 45%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.over-right h2 {
+    color: gold;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
 
 
+.over-right p {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 600;
+}
 
+#rating {
+    color: goldenrod;
+}
 
+#des {
+    font-size: 1.2rem;
+    color: black;
+}
 
+.more-option {
+    height: 15%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+#cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.1rem 3.8rem;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#like {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+    font-size: 1.2rem;
+}
 
 
 
@@ -1025,6 +1136,24 @@ footer {
         width:95%;
     }
 
+    .over-outer{
+        width:90%;
+        height:75%;
+    }
+
+    .over-right h2{
+        font-size:2rem;
+    }
+
+    .over-right p{
+        font-size:1.2rem;
+    }
+
+    #cart{
+        padding:1rem 2.5rem;
+        font-size:1.2rem;
+    }
+
 }
 
 
@@ -1111,6 +1240,34 @@ footer {
 
     .footer-right i{
         font-size:1.5rem;
+    }
+
+    .over-outer{
+        width:95%;
+        height:75%;
+    }
+
+    .over-left,
+    .over-right{
+        width:48%;
+    }
+
+    .over-right{
+        gap:1.2rem;
+    }
+
+    .over-right h2{
+        font-size:1.8rem;
+    }
+
+    .over-right p{
+        font-size:1.1rem;
+    }
+
+    #cart{
+        padding:0.9rem 2rem;
+        font-size:1rem;
+        gap:1rem;
     }
 
 }
@@ -1377,6 +1534,35 @@ footer {
         align-items:center;
     }
 
+    .over-outer{
+        width:92%;
+        height:auto;
+        padding:1.5rem;
+        flex-direction:column;
+        gap:1.5rem;
+    }
+
+    .over-left{
+        width:100%;
+        height:320px;
+    }
+
+    .over-right{
+        width:100%;
+        height:auto;
+        text-align:center;
+        align-items:center;
+    }
+
+    .more-option{
+        justify-content:center;
+        gap:1rem;
+    }
+
+    #cart{
+        padding:1rem 2rem;
+    }
+
     
 }
 
@@ -1488,6 +1674,34 @@ header{
 
     .footer-right i{
         font-size:1.4rem;
+    }
+
+    .over-outer{
+        width:95%;
+        padding:1rem;
+    }
+
+    .over-left{
+        height:260px;
+    }
+
+    .over-right h2{
+        font-size:1.6rem;
+    }
+
+    .over-right p{
+        font-size:1rem;
+    }
+
+    #des{
+        font-size:1rem;
+        text-align:center;
+    }
+
+    #cart{
+        width:100%;
+        padding:1rem;
+        font-size:1rem;
     }
 
 }
@@ -1618,6 +1832,30 @@ header{
         font-size:1.5rem;
     }
 
+    .over-left{
+        height:220px;
+    }
+
+    .more-option{
+        flex-direction:column;
+        width:100%;
+    }
+
+    #cart{
+        width:100%;
+    }
+
+    #like{
+        width:55px;
+        height:55px;
+    }
+
+    #close{
+        right:20px;
+        top:15px;
+        font-size:32px;
+    }
+
     
 }
 
@@ -1703,6 +1941,14 @@ header{
     .footer-right{
         flex-wrap:wrap;
     }
+
+    .over-right h2{
+        font-size:1.4rem;
+    }
+
+    .over-right p{
+        font-size:.95rem;
+    }
 }
 
 
@@ -1768,6 +2014,18 @@ header{
         font-size:.85rem;
     }
 
+    .over-left{
+        height:180px;
+    }
+
+    .over-right{
+        gap:.8rem;
+    }
+
+    #cart{
+        font-size:.9rem;
+        padding:.9rem;
+    }
 }
 
 

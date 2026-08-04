@@ -237,7 +237,7 @@
                 <div class="category-down ">
 
                     <!--card 1-->
-                    <div class="categories-card" id="cate-men">
+                    <div class="categories-card" id="cate-men" onclick="goTOCollection()">
                         <div class="text">
                             <h3>Men</h3>
                             <button onclick="goTOCollection()">
@@ -248,7 +248,7 @@
                     </div>
 
                     <!--card 2-->
-                    <div class="categories-card" id="cate-women">
+                    <div class="categories-card" id="cate-women" onclick="goTOCollection()">
                         <div class="text">
                             <h3>Women</h3>
                             <button onclick="goTOCollection()">
@@ -259,7 +259,7 @@
                     </div>
 
                     <!--card 3-->
-                    <div class="categories-card" id="uni">
+                    <div class="categories-card" id="uni" onclick="goTOCollection()">
                         <div class="text">
                             <h3>Unisex</h3>
                             <button onclick="goTOCollection()">
@@ -270,9 +270,9 @@
                     </div>
 
                     <!--card 4-->
-                    <div class="categories-card" id="asse">
+                    <div class="categories-card" id="asse" onclick="goTOCollection()">
                         <div class="text">
-                            <h3>Men</h3>
+                            <h3>Assesories</h3>
                             <button onclick="goTOCollection()">
                                 Explore
                                 <i class="ri-arrow-right-long-line"></i>
@@ -285,6 +285,8 @@
 
         </section>
 
+
+        <!--trend-->
         <section id="trending" class="flex">
             <div class="trending-outer">
 
@@ -296,7 +298,7 @@
                     </button>
                 </div>
 
-                <div class="trending-middle">
+                <!-- <div class="trending-middle">
 
                     <button id="trend-all" >
                         All
@@ -313,12 +315,12 @@
                     <button id="trend-Unisex">
                         Unisex
                     </button>
-                </div>
+                </div> -->
 
                 <div class="trending-down">
 
                     <!--trend card 1--> 
-                    <div class="trend-card">
+                    <div class="trend-card" id="oversize">
                         <img src="https://images-static.nykaa.com/media/catalog/product/b/a/babcc29268310_1.jpg?tr=w-500" alt="">
                         <div class="trend-text">
                             <h4>Oversize Knit</h4>
@@ -330,7 +332,43 @@
                                 <i class="ri-heart-line"></i>
                             </div>
                         </div>
+                    </div>  
+                    
+                    <!-- Popup 1 -->
+                    <div   div id="overside-pop">
+                        <span id="close">&times;</span>
+                        <div class="over-outer">
+                            <div class="over-left"></div>
+
+                            <div class="over-right">
+                                <h2>Oversize Knit</h2>
+                                <p>₹500/-</p>
+                                <p id="rating">
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-half-line"></i>
+                                </p>
+                                <p id="des">
+                                    Premium quality cotton knit with a relaxed oversized fit. Soft, breathable and perfect for everyday.
+                                </p>
+
+                                <div class="more-option">
+                                    <button id="cart">
+                                        Add to cart
+                                        <i class="ri-shopping-bag-fill"></i>
+                                    </button>
+
+                                    <button id="like">
+                                        <i class="ri-heart-line"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
+
 
                     
                     <!--trend card 2--> 
