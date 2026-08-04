@@ -82,6 +82,8 @@ searchBtn.addEventListener("mouseleave", () => {
 // Products card //
 
 const products = [
+
+    // men //
   {
     id: 1,
     name: "Premium Black Hoodie",
@@ -95,7 +97,7 @@ const products = [
     stock: 18,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black"],
-    image: "./Assets/products/men/hoodie-black.jpg"
+    image: "https://londhegarments.in/cdn/shop/files/4M6A9702.jpg?v=1726135385&width=1080"
   },
   {
     id: 2,
@@ -110,7 +112,7 @@ const products = [
     stock: 25,
     sizes: ["S", "M", "L", "XL"],
     colors: ["White"],
-    image: "./Assets/products/men/tshirt-white.jpg"
+    image: "https://ramrajcotton.in/cdn/shop/collections/100_Cotton_White_Shirt.jpg?v=1782903206&width=500"
   },
   {
     id: 3,
@@ -125,7 +127,7 @@ const products = [
     stock: 20,
     sizes: ["30", "32", "34", "36"],
     colors: ["Blue"],
-    image: "./Assets/products/men/jeans-blue.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIaEKYudhohkJaSYN8aN0L36dXezIdHd_wNiXI3djne2CE1OvLV4dl7dY&s=10"
   },
   {
     id: 4,
@@ -140,7 +142,7 @@ const products = [
     stock: 12,
     sizes: ["M", "L", "XL"],
     colors: ["Blue"],
-    image: "./Assets/products/men/jacket-denim.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65m1AOnhf6YRumulfPCHzd6abEBATY4Q3Fbkpbyi6OiuI_OraIp4vsTo&s=10"
   },
   {
     id: 5,
@@ -155,7 +157,7 @@ const products = [
     stock: 16,
     sizes: ["30", "32", "34", "36"],
     colors: ["Olive"],
-    image: "./Assets/products/men/cargo-olive.jpg"
+    image: "https://bornfreefashions.com/cdn/shop/files/002A5402_235ff6b6-69dd-46b8-8141-729b31e9806e.jpg?v=1773134508"
   },
   {
     id: 6,
@@ -170,7 +172,7 @@ const products = [
     stock: 19,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Grey"],
-    image: "./Assets/products/men/sweatshirt-grey.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEaA5M-0KoCcbGCW_7qQWdemZkt9Y5aPKfu6XbfSArtg&s=10"
   },
   {
     id: 7,
@@ -185,7 +187,7 @@ const products = [
     stock: 30,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Blue"],
-    image: "./Assets/products/men/shirt-blue.jpg"
+    image: "https://images.meesho.com/images/products/672045788/jw1cb_512.webp?width=512"
   },
   {
     id: 8,
@@ -200,7 +202,7 @@ const products = [
     stock: 8,
     sizes: ["M", "L", "XL"],
     colors: ["Black"],
-    image: "./Assets/products/men/leather-black.jpg"
+    image: "https://m.media-amazon.com/images/I/81kZJ3hxyQL._AC_UY1100_.jpg"
   },
   {
     id: 9,
@@ -215,7 +217,7 @@ const products = [
     stock: 21,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Beige"],
-    image: "./Assets/products/men/polo-beige.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEhkKKLntWAFQTdAR-htCBAVv2ke-05mN7Tfbe8WNWQ&s"
   },
   {
     id: 10,
@@ -230,7 +232,7 @@ const products = [
     stock: 9,
     sizes: ["M", "L", "XL"],
     colors: ["Brown"],
-    image: "./Assets/products/men/coat-brown.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvRopCtqhikQNOoAVmU_qCl4Co34iDUBfgqCcqyA49Ww&s"
   },
 
   {
@@ -246,7 +248,7 @@ const products = [
     stock: 28,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black"],
-    image: "./Assets/products/men/tshirt-oversized-black.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi2tndLnERIGeHq0UE0uOxmPHxecIbEtiAKNglGwHgqA&s"
   },
   {
     id: 12,
@@ -261,7 +263,7 @@ const products = [
     stock: 17,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Navy"],
-    image: "./Assets/products/men/hoodie-navy.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDjYei8-OqRIZb2tveUW2frCCEI7fcqk6BLJ7XuE5jFIKGdSPhDIf4Yk&s=10"
   },
   {
     id: 13,
@@ -276,7 +278,7 @@ const products = [
     stock: 24,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Red"],
-    image: "./Assets/products/men/shirt-check-red.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7NpcCwAdnOii4ltYESKfJagSTB22R6ZsC1R4RUgMVm9mLpRDZVNcOlhHA&s=10"
   },
   {
     id: 14,
@@ -291,7 +293,7 @@ const products = [
     stock: 14,
     sizes: ["30", "32", "34", "36"],
     colors: ["Blue"],
-    image: "./Assets/products/men/jeans-ripped-blue.jpg"
+    image: "https://img.tatacliq.com/images/i22//437Wx649H/MP000000025567355_437Wx649H_202503050056221.jpeg"
   },
   {
     id: 15,
@@ -306,7 +308,7 @@ const products = [
     stock: 22,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black"],
-    image: "./Assets/products/men/joggers-black.jpg"
+    image: "https://images.meesho.com/images/products/1009016855/ih26p_512.webp?width=512"
   },
   {
     id: 16,
@@ -321,7 +323,7 @@ const products = [
     stock: 11,
     sizes: ["M", "L", "XL"],
     colors: ["Green"],
-    image: "./Assets/products/men/jacket-bomber.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKe5BIbdmvvELAcMBJHhiMjlXDGUG4W2QX3X9DzDObRjIsuwlA7pNX1Iz5&s=10"
   },
   {
     id: 17,
@@ -336,7 +338,7 @@ const products = [
     stock: 31,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Grey"],
-    image: "./Assets/products/men/shorts-grey.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0-w65JHNl-JJ1BYiekz7TWz-4cKSd9KipfoNZQK24A&s"
   },
   {
     id: 18,
@@ -351,7 +353,7 @@ const products = [
     stock: 18,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Cream"],
-    image: "./Assets/products/men/sweater-cream.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7FmNu1c3uM8Gz1cN4zYWiaSA1FUcjFxLq0xiMeJW5lb1JR1R8vtYPfZg&s=10"
   },
   {
     id: 19,
@@ -366,7 +368,7 @@ const products = [
     stock: 26,
     sizes: ["S", "M", "L", "XL"],
     colors: ["White"],
-    image: "./Assets/products/men/polo-white.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejMHBM0lTd0MzLzXe01Oke0BJZgaZy7wFzTk4inkzmg&s"
   },
   {
     id: 20,
@@ -381,8 +383,11 @@ const products = [
     stock: 7,
     sizes: ["M", "L", "XL"],
     colors: ["Camel"],
-    image: "./Assets/products/men/trench-camel.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRvO3b0AJeQDy1iRUlfrLWlncA3TyujSGXAILuQx7RxXNMrGdTDZhIpM&s=10"
   },
+
+  // women  //
+
   {
     id: 21,
     name: "Floral Summer Dress",
