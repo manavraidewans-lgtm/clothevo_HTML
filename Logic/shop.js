@@ -693,3 +693,60 @@ const products = [
 
 
 
+const cardsOuter = document.querySelector(".cards-outer");
+
+function displayProducts(arr){
+
+    cardsOuter.innerHTML = "";
+
+    arr.forEach(product=>{
+
+        cardsOuter.innerHTML += `
+        
+        <div class="product-card">
+
+            <img src="${product.image}" alt="${product.name}">
+
+            <div class="product-info">
+
+                <h3>${product.name}</h3>
+
+                <p class="product-brand">${product.brand}</p>
+
+                <span class="product-type">
+                    ${product.category} • ${product.type}
+                </span>
+
+                <div class="product-price">
+                    <h2>₹${product.price}</h2>
+                    <del>₹${product.oldPrice}</del>
+                </div>
+
+                <p>
+                    ⭐ ${product.rating}
+                    (${product.reviews})
+                </p>
+
+                <div class="product-bottom">
+
+                    <span>
+                        Stock : ${product.stock}
+                    </span>
+
+                    <button>
+                        Add Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+displayProducts(products);
