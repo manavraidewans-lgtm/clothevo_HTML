@@ -382,6 +382,17 @@ form {
     gap:2rem;
 }
 
+.about-hero-content{
+    left:12%;
+    transform:translateY(-50%);
+    width:45%;
+}
+
+.about-hero-content h2{
+    font-size:2.2rem;
+    letter-spacing:3px;
+}
+
 }
 
 
@@ -393,6 +404,24 @@ form {
 
 .navbar-icons span{
     gap:1rem;
+}
+
+.about-hero-content{
+    left:8%;
+    width:55%;
+}
+
+.about-hero-content h2{
+    font-size:2rem;
+}
+
+.about-hero-content p{
+    font-size:1rem;
+}
+
+.about-hero-but button{
+    padding:.9rem 2rem;
+    font-size:1rem;
 }
 
 }
@@ -499,6 +528,34 @@ form {
         margin-right:15px;
     }
 
+    header{
+    min-height:100vh;
+    background-position:center;
+}
+
+.about-hero-content{
+    position:absolute;
+    left:50%;
+    top:55%;
+    transform:translate(-50%,-50%);
+    width:90%;
+    padding:2rem 1rem;
+}
+
+.about-hero-content h2{
+    font-size:2rem;
+    letter-spacing:2px;
+}
+
+.about-hero-content p{
+    font-size:1rem;
+}
+
+.about-hero-but button{
+    width:100%;
+    justify-content:center;
+}
+
 }
 
 
@@ -512,6 +569,23 @@ header{
 
 .login-heading h1{
     font-size:2.2rem;
+}
+
+.about-hero-content{
+    width:92%;
+}
+
+.about-hero-content h2{
+    font-size:1.7rem;
+    letter-spacing:1px;
+}
+
+.about-hero-content p{
+    font-size:.95rem;
+}
+
+.about-hero-but{
+    padding:.5rem;
 }
 
 }
@@ -551,12 +625,43 @@ header{
     padding:.8rem;
 }
 
+.about-hero-content{
+    width:95%;
+    padding:1.5rem 1rem;
+}
+
+#new{
+    font-size:1rem;
+}
+
+.about-hero-content h2{
+    font-size:1.45rem;
+    line-height:1.4;
+}
+
+.about-hero-content p{
+    font-size:.9rem;
+}
+
+.about-hero-but button{
+    padding:.8rem 1.2rem;
+    font-size:.9rem;
+}
+
 }
 
 
 
 @media (max-width:375px){
 
+
+.about-hero-content h2{
+    font-size:1.3rem;
+}
+
+.about-hero-content p{
+    font-size:.85rem;
+}
 }
 
 
@@ -571,6 +676,23 @@ header{
 
 .navbar-icons button{
     padding:.2rem;
+}
+
+.about-hero-content{
+    padding:1rem;
+}
+
+.about-hero-content h2{
+    font-size:1.1rem;
+}
+
+.about-hero-content p{
+    font-size:.8rem;
+}
+
+.about-hero-but button{
+    font-size:.8rem;
+    padding:.7rem 1rem;
 }
 
 }
