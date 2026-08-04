@@ -5,6 +5,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /*       HEADER      */
@@ -301,10 +307,36 @@ form {
 
 
 
+/*      Details     */
+#details {
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(197, 196, 196);
+}
 
 
+.details-outer {
+    height: 100%;
+    width: 60%;
+   background-color: rgb(197, 196, 196);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+}
 
+.cards-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
+.cards-details i {
+    font-size: 1.5rem;
+    color: rgb(4, 4, 4);
+    font-weight: 900;
+}
 
 
 
@@ -360,6 +392,10 @@ form {
     gap:2rem;
 }
 
+.details-outer{
+        width:80%;
+    }
+
 }
 
 
@@ -372,6 +408,24 @@ form {
 .navbar-icons span{
     gap:1rem;
 }
+
+#details{
+        height:auto;
+        padding:12px 0;
+    }
+
+    .details-outer{
+        width:90%;
+        gap:1rem;
+    }
+
+    .cards-details p{
+        font-size:.9rem;
+    }
+
+    .cards-details i{
+        font-size:1.3rem;
+    }
 
 }
 
@@ -477,6 +531,31 @@ form {
         margin-right:15px;
     }
 
+
+    #details{
+        height:auto;
+        padding:15px 0;
+    }
+
+    .details-outer{
+        width:95%;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+        row-gap:15px;
+    }
+
+    .details-outer > span{
+        display:none;
+    }
+
+    .cards-details{
+        width:45%;
+        justify-content:flex-start;
+    }
+
+    .divider{
+        display:none;
+    }
 }
 
 
@@ -491,6 +570,20 @@ header{
 .login-heading h1{
     font-size:2.2rem;
 }
+
+.details-outer{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .cards-details{
+        width:100%;
+        justify-content:center;
+    }
+
+    .cards-details p{
+        text-align:center;
+    }
 
 }
 
@@ -528,7 +621,20 @@ header{
     font-size:1rem;
     padding:.8rem;
 }
+.cards-details{
+        flex-direction:column;
+        gap:8px;
+    }
 
+    .cards-details i{
+        font-size:1.6rem;
+    }
+
+    .cards-details p{
+        font-size:.9rem;
+    }
+
+    
 }
 
 
@@ -550,5 +656,9 @@ header{
 .navbar-icons button{
     padding:.2rem;
 }
+
+.cards-details p{
+        font-size:.8rem;
+    }
 
 }
