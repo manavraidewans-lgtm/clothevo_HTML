@@ -100,29 +100,43 @@ function trend() {
 
 
 
-// trend - oversize //
 
-const card = document.getElementById("oversize");
+// PRODUCT POPUP //
+
+
+const cards = document.querySelectorAll(".trend-card");
+
 const popup = document.getElementById("overside-pop");
-const popupImg = document.getElementById("popup-img");
-const closeBtn = document.getElementById("close");
+const closePopup = document.getElementById("close");
 
-// Open Popup
-card.addEventListener("click", () => {
-    const img = card.querySelector("img");
+const popupImage = document.getElementById("popupImage");
+const popupTitle = document.getElementById("popupTitle");
+const popupPrice = document.getElementById("popupPrice");
+const popupDescription = document.getElementById("popupDescription");
 
-    popup.style.display = "flex";
-    popupImg.src = img.src;
+cards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        popupImage.src = card.dataset.image;
+        popupTitle.innerText = card.dataset.name;
+        popupPrice.innerText = card.dataset.price;
+        popupDescription.innerText = card.dataset.description;
+
+        popup.style.display = "flex";
+
+    });
+
 });
 
-// Close Button
-closeBtn.addEventListener("click", () => {
+closePopup.addEventListener("click", () => {
     popup.style.display = "none";
 });
 
-// Close when clicking outside image
 popup.addEventListener("click", (e) => {
+
     if(e.target === popup){
         popup.style.display = "none";
     }
+
 });

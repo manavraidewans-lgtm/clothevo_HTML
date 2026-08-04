@@ -947,10 +947,11 @@ footer {
     z-index: 9999;
 }
 
-#popup-img{
-    width: 45%;
-    max-width: 90%;
-    border-radius: 10px;
+#popupImage{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:25px;
 }
 
 #close{
@@ -972,17 +973,14 @@ footer {
     align-items: center;
 }
 
-.over-left {
-    height: 90%;
-    width: 45%;
-    /* background-color: aquamarine; */
-    background-image: url("https://images-static.nykaa.com/media/catalog/product/b/a/babcc29268310_1.jpg?tr=w-500");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px;
-    border: 2px solid grey;
+.over-left{
+    height:90%;
+    width:45%;
+    border-radius:25px;
+    overflow:hidden;
 }
+
+
 
 .over-right {
     height: 90%;
@@ -1047,6 +1045,26 @@ footer {
     font-size: 1.2rem;
 }
 
+
+
+
+
+#Trench-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+
+    z-index: 9999;
+}
 
 
 
