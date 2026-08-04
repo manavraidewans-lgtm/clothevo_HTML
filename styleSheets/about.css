@@ -375,7 +375,19 @@ form {
 
 
 
+/*   Search btn   */
 
+#searchInp {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .8s ease;
+}
+
+#searchInp.active {
+    width: 200px;
+    opacity: 1;
+}
 
 
 

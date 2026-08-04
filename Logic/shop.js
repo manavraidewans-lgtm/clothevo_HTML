@@ -60,3 +60,16 @@ function goToCart() {
     window.location.href = "../Pages/cart.html";
 }
 
+
+
+// hover search
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInp");
+
+searchBtn.addEventListener("mouseenter", () => {
+    searchInput.classList.add("active");
+});
+
+searchBtn.addEventListener("mouseleave", () => {
+    searchInput.classList.remove("active");
+});

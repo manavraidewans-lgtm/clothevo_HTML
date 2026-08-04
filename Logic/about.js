@@ -77,4 +77,3 @@ searchBtn.addEventListener("mouseenter", () => {
 searchBtn.addEventListener("mouseleave", () => {
     searchInput.classList.remove("active");
 });
-

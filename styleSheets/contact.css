@@ -131,6 +131,20 @@ header {
 
 
 
+/*   Search btn   */
+
+#searchInp {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .8s ease;
+}
+
+#searchInp.active {
+    width: 200px;
+    opacity: 1;
+}
+
 
 
 
@@ -566,6 +580,60 @@ form button:hover {
 
 
 
+/*      FOOTER      */
+footer {
+    margin-bottom: 0.4rem;
+    height: 6.5vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-color: grey;
+}
+
+
+.footer-out {
+    height: 100%;
+    width: 90%;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-left p {
+    color: white;
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-right i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -641,6 +709,14 @@ form button{
     padding:1rem 14rem;
 }
 
+.footer-left p{
+    font-size:1rem;
+}
+
+.footer-right i{
+    font-size:1.4rem;
+}
+
 
 }
 
@@ -706,6 +782,19 @@ form button{
 
 form button{
     padding:1rem 10rem;
+    font-size:1.3rem;
+}
+
+footer{
+    height:auto;
+    padding:1rem 0;
+}
+
+.footer-left p{
+    font-size:.95rem;
+}
+
+.footer-right i{
     font-size:1.3rem;
 }
 
@@ -912,6 +1001,26 @@ form button{
     font-size:1.2rem;
 }
 
+footer{
+    height:auto;
+    padding:1.2rem 0;
+}
+
+.footer-out{
+    flex-direction:column;
+    gap:1rem;
+}
+
+.footer-left,
+.footer-right{
+    width:100%;
+    justify-content:center;
+}
+
+.footer-left p{
+    text-align:center;
+}
+
 }
 
 
@@ -980,6 +1089,18 @@ header{
 
 form button{
     font-size:1.1rem;
+}
+
+.footer-left p{
+    font-size:.9rem;
+}
+
+.footer-right{
+    gap:.8rem;
+}
+
+.footer-right i{
+    font-size:1.2rem;
 }
 }
 
@@ -1092,6 +1213,19 @@ form button{
     padding:.9rem;
 }
 
+.footer-left p{
+    font-size:.8rem;
+}
+
+.footer-right{
+    gap:.7rem;
+}
+
+.footer-right i{
+    font-size:1.1rem;
+}
+
+
 }
 
 
@@ -1133,6 +1267,18 @@ form button{
 
 form button{
     font-size:.95rem;
+}
+
+.footer-left p{
+    font-size:.75rem;
+}
+
+.footer-right{
+    gap:.6rem;
+}
+
+.footer-right i{
+    font-size:1rem;
 }
 
 }
@@ -1203,6 +1349,18 @@ form button{
 form button{
     font-size:.85rem;
     padding:.8rem;
+}
+
+.footer-left p{
+    font-size:.7rem;
+}
+
+.footer-right{
+    gap:.5rem;
+}
+
+.footer-right i{
+    font-size:.9rem;
 }
 
 }

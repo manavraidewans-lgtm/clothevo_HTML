@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wdth,wght@0,100..125,100..900;1,100..125,100..900&display=swap" rel="stylesheet">
 
+
+
     <link
   href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
 
@@ -42,9 +44,14 @@
             <div class="navbar-icons">
                 <span>
 
-                    <button>
+                    <div id="searchBtn">
                         <i class="ri-search-line"></i>
-                    </button>
+                        <input
+                            type="text"
+                            id="searchInp"
+                            placeholder="Search Your Item"
+                        >
+                    </div>
                     
                     <button id="login-btn">
                         <i class="ri-user-line"></i>
@@ -251,6 +258,27 @@
 
     </main>
 
+
+
+    <footer class="flex">
+
+        <div class="footer-out">
+
+            <div class="footer-left">
+                <p>
+                    © 2024 CV Store. All rights rserved.
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <i class="ri-visa-line"></i>
+                <i class="ri-mastercard-fill"></i>
+                <i class="ri-paypal-fill"></i>
+                <i class="ri-wallet-fill"></i>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="../Logic/contact.js"></script>
 </body>
