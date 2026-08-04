@@ -5,6 +5,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*       HEADER      */
 header {
@@ -348,16 +354,78 @@ form {
 
 
 
+/*          GET IN TOUCH    */
 
+#getintouch {
+    margin-top: 3rem;
+    height: 25vh;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-bottom: 3rem;
+}
 
+.touch-outer {
+    height: 90%;
+    width: 90%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
+.touch-outer h1 {
+    color: gold;
+}
 
+.touch-card-outer {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.touch-card {
+    height: 100%;
+    width: 22%;
+    /* background-color: chartreuse; */
+    display: flex;
+    gap: 1rem;
+}
 
+.touch-left {
+    height: 100%;
+    width: 25%;
+}
 
+.touch-left i {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+    border: none;
+}
 
+.touch-right {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
 
+.touch-right h3 {
+    color: grey;
+    font-weight: 900;
+}
 
+.touch-right p {
+    color: grey;
+}
 
 
 
@@ -393,6 +461,23 @@ form {
     letter-spacing:3px;
 }
 
+#getintouch{
+    height:auto;
+    padding:3rem 0;
+}
+
+.touch-card{
+    width:23%;
+}
+
+.touch-right h3{
+    font-size:1rem;
+}
+
+.touch-right p{
+    font-size:.9rem;
+}
+
 }
 
 
@@ -422,6 +507,20 @@ form {
 .about-hero-but button{
     padding:.9rem 2rem;
     font-size:1rem;
+}
+
+#getintouch{
+    height:auto;
+    padding:3rem 0;
+}
+
+.touch-card-outer{
+    flex-wrap:wrap;
+    row-gap:2rem;
+}
+
+.touch-card{
+    width:48%;
 }
 
 }
@@ -556,6 +655,32 @@ form {
     justify-content:center;
 }
 
+#getintouch{
+    height:auto;
+    padding:3rem 0;
+}
+
+.touch-card-outer{
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.touch-card{
+    width:100%;
+    padding:1rem;
+    border-radius:12px;
+    background:#f6f6f6;
+    align-items:center;
+}
+
+.touch-left{
+    width:20%;
+}
+
+.touch-right{
+    width:80%;
+}
+
 }
 
 
@@ -588,6 +713,26 @@ header{
     padding:.5rem;
 }
 
+.touch-card{
+    padding:1rem;
+}
+
+.touch-left{
+    width:22%;
+}
+
+.touch-left i{
+    font-size:1.7rem;
+    padding:.9rem;
+}
+
+.touch-right h3{
+    font-size:1rem;
+}
+
+.touch-right p{
+    font-size:.9rem;
+}
 }
 
 
@@ -647,6 +792,34 @@ header{
     padding:.8rem 1.2rem;
     font-size:.9rem;
 }
+.touch-outer h1{
+    font-size:2rem;
+}
+
+.touch-card{
+    gap:.8rem;
+}
+
+.touch-left{
+    width:25%;
+}
+
+.touch-left i{
+    font-size:1.5rem;
+    padding:.8rem;
+}
+
+.touch-right{
+    width:75%;
+}
+
+.touch-right h3{
+    font-size:.95rem;
+}
+
+.touch-right p{
+    font-size:.8rem;
+}
 
 }
 
@@ -662,6 +835,23 @@ header{
 .about-hero-content p{
     font-size:.85rem;
 }
+
+.touch-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.touch-left,
+.touch-right{
+    width:100%;
+    align-items:center;
+    justify-content:center;
+}
+
+.touch-right{
+    align-items:center;
+}
+
 }
 
 
@@ -693,6 +883,23 @@ header{
 .about-hero-but button{
     font-size:.8rem;
     padding:.7rem 1rem;
+}
+
+.touch-outer h1{
+    font-size:1.6rem;
+}
+
+.touch-left i{
+    font-size:1.3rem;
+    padding:.7rem;
+}
+
+.touch-right h3{
+    font-size:.85rem;
+}
+
+.touch-right p{
+    font-size:.75rem;
 }
 
 }
