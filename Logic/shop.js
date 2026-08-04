@@ -401,7 +401,7 @@ const products = [
     stock: 14,
     sizes: ["XS", "S", "M", "L"],
     colors: ["Pink"],
-    image: "./Assets/products/women/dress-floral-pink.jpg"
+    image: "https://claura.in/cdn/shop/files/drs-52-pink_1.jpg?v=1731140171"
   },
   {
     id: 22,
@@ -416,7 +416,7 @@ const products = [
     stock: 25,
     sizes: ["XS", "S", "M", "L"],
     colors: ["White"],
-    image: "./Assets/products/women/top-crop-white.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTziRGUHi9UlVQuk67wzfCkw_SoRgZP21p33-Fe7CCiURWC3qkIOPUCZ-Y&s=10"
   },
   {
     id: 23,
@@ -431,7 +431,7 @@ const products = [
     stock: 19,
     sizes: ["26", "28", "30", "32"],
     colors: ["Blue"],
-    image: "./Assets/products/women/jeans-highwaist-blue.jpg"
+    image: "https://5.imimg.com/data5/ECOM/Default/2024/1/374427697/KO/GL/PU/155907656/08-07-202300047-500x500.jpg"
   },
   {
     id: 24,
@@ -446,7 +446,7 @@ const products = [
     stock: 8,
     sizes: ["S", "M", "L"],
     colors: ["Beige"],
-    image: "./Assets/products/women/coat-beige.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZkAVQafx6ZLiMdpKWzvr8z_5-N4L0GPa3IiUw_ULIla9c6n_Exq2ISk_&s=10"
   },
   {
     id: 25,
@@ -461,7 +461,7 @@ const products = [
     stock: 17,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Grey"],
-    image: "./Assets/products/women/hoodie-grey.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14-mCWlLRxZvjJNbIvyTNZ5AtMCAI-lw42RxhQ3utOwknwNkBFe4_jMsU&s=10"
   },
   {
     id: 26,
@@ -476,7 +476,7 @@ const products = [
     stock: 9,
     sizes: ["S", "M", "L"],
     colors: ["Black"],
-    image: "./Assets/products/women/jacket-leather-black.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVuM_KITjsIfTYgAy7dRNvndal2KnGY1pr-ekPLuryJWWVOXU44NxS6f01&s=10"
   },
   {
     id: 27,
@@ -491,7 +491,7 @@ const products = [
     stock: 22,
     sizes: ["XS", "S", "M", "L"],
     colors: ["Brown"],
-    image: "./Assets/products/women/skirt-midi-brown.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV_1DfgxSsavjU68oOEudnhav8BxOFN3iFXsWX3z5x-Sa8EOONwalrxxyR&s=10"
   },
   {
     id: 28,
@@ -506,7 +506,7 @@ const products = [
     stock: 16,
     sizes: ["S", "M", "L"],
     colors: ["Cream"],
-    image: "./Assets/products/women/sweater-cream.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8cIL2VzPBIqekeX_TBfHn6hCnY50g301r7n-b8T6vJ-bWTdIs0UZ1F0&s=10"
   },
   {
     id: 29,
@@ -521,7 +521,7 @@ const products = [
     stock: 20,
     sizes: ["S", "M", "L"],
     colors: ["Blue"],
-    image: "./Assets/products/women/shirt-denim-blue.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSjwvYyKhRvpuxYFVRa8vJpAgCsCdC55cWU3gzTLmxg&s"
   },
   {
     id: 30,
@@ -536,7 +536,7 @@ const products = [
     stock: 18,
     sizes: ["26", "28", "30", "32"],
     colors: ["Olive"],
-    image: "./Assets/products/women/cargo-olive.jpg"
+    image: "https://levi.in/cdn/shop/files/000FW0002_01_Styleshot_86969d00-12cb-4678-8fd1-1fde3dad2dfd.jpg?v=1743419109"
   },
   {
     id: 31,
@@ -551,7 +551,7 @@ const products = [
     stock: 12,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black"],
-    image: "./Assets/products/women/dress-maxi-black.jpg"
+    image: "https://img.tatacliq.com/images/i27//437Wx649H/MP000000028338033_437Wx649H_202509161051461.jpeg"
   },
   {
     id: 32,
@@ -566,7 +566,7 @@ const products = [
     stock: 18,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Pink"],
-    image: "./Assets/products/women/hoodie-pink.jpg"
+    image: "https://urturms.com/cdn/shop/files/06_d53a96e0-fafe-403c-b3c2-f5c1627ef0e4.jpg?v=1742463832&width=3840"
   },
   {
     id: 33,
@@ -581,7 +581,7 @@ const products = [
     stock: 24,
     sizes: ["S", "M", "L"],
     colors: ["White"],
-    image: "./Assets/products/women/shirt-white.jpg"
+    image: "https://images.meesho.com/images/products/764597225/brq4l_512.webp?width=512"
   },
   {
     id: 34,
@@ -596,7 +596,7 @@ const products = [
     stock: 20,
     sizes: ["26", "28", "30", "32"],
     colors: ["Blue"],
-    image: "./Assets/products/women/jeans-skinny-blue.jpg"
+    image: "https://m.media-amazon.com/images/I/51e2MYXCPhL._AC_UY1100_.jpg"
   },
   {
     id: 35,
@@ -611,7 +611,7 @@ const products = [
     stock: 7,
     sizes: ["S", "M", "L"],
     colors: ["Camel"],
-    image: "./Assets/products/women/coat-camel.jpg"
+    image: "https://www.petitestudionyc.com/cdn/shop/files/W1196-2HarrietDouble-BreastedWoolCoat-Camel_6.jpg?v=1695665250"
   },
   {
     id: 36,
@@ -626,7 +626,7 @@ const products = [
     stock: 14,
     sizes: ["S", "M", "L"],
     colors: ["Blue"],
-    image: "./Assets/products/women/jacket-denim-blue.jpg"
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/7/624504199/EM/ZU/GZ/153718495/whatsapp-image-2026-07-11-at-7-16-58-pm-500x500.jpeg"
   },
   {
     id: 37,
@@ -641,7 +641,7 @@ const products = [
     stock: 16,
     sizes: ["S", "M", "L"],
     colors: ["Beige"],
-    image: "./Assets/products/women/cardigan-beige.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_luIV-wA3dRM0dKJ-3lM07fFwWT7KQnJYOCWDq4oif_5xq3F5xTgQxUcO&s=10"
   },
   {
     id: 38,
@@ -656,7 +656,7 @@ const products = [
     stock: 19,
     sizes: ["26", "28", "30", "32"],
     colors: ["Black"],
-    image: "./Assets/products/women/trousers-black.jpg"
+    image: "https://m.media-amazon.com/images/I/71b24zUhRyL._AC_UY1100_.jpg"
   },
   {
     id: 39,
@@ -671,7 +671,7 @@ const products = [
     stock: 28,
     sizes: ["S", "M", "L", "XL"],
     colors: ["Lavender"],
-    image: "./Assets/products/women/tshirt-graphic-lavender.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3hUGEgZpfXtaiNJWsRM3u_qmsVgx5e4GLA0-0mJwQA&s"
   },
   {
     id: 40,
@@ -686,7 +686,7 @@ const products = [
     stock: 21,
     sizes: ["XS", "S", "M", "L"],
     colors: ["Black"],
-    image: "./Assets/products/women/skirt-mini-black.jpg"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGtdDzEXJKvF32BNlqrIcO-1saQgS8mtXHVCqd60ehw&s"
   }
 ];
 
