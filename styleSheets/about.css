@@ -612,6 +612,153 @@ form {
 
 
 
+/*          NEWS            */
+#news {
+    height: 25vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-outer {
+    height: 90%;
+    width: 90%;
+    background-color: rgb(234, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.news-left {
+    height: 100%;
+    width: 25%;
+    /* background-color: rgb(236, 164, 21); */
+    background-image: url("../Assets/about\ store.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.news-middle {
+    height: 100%;
+    width: 25%;
+    /* background-color: rgb(21, 197, 36); */
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.news-middle h2 {
+    color: rgb(90, 89, 89);
+    font-weight: 900;
+}
+
+.news-middle p {
+    color: grey;
+    font-weight: 500;
+}
+
+.news-right {
+    height: 100%;
+    width: 45%;
+    /* background-color: rgb(28, 31, 232); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.news-right input {
+    padding-left: 1.5rem;
+    height: 30%;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(176, 174, 174);
+}
+
+.news-right button {
+    padding: 0.6rem 1.6rem;
+    background-color: rgb(237, 213, 76);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: 900;
+    transition: all 0.5s linear;
+}
+
+.news-right button:hover {
+    border: 3px solid rgb(176, 174, 174);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*      FOOTER      */
+footer {
+    margin-bottom: 0.4rem;
+    height: 6.5vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-color: grey;
+}
+
+
+.footer-out {
+    height: 100%;
+    width: 90%;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-left p {
+    color: white;
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-right i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -691,6 +838,18 @@ form {
         width:23%;
     }
 
+    .news-middle{
+        width:30%;
+    }
+
+    .news-right{
+        width:40%;
+    }
+
+    .news-right button{
+        font-size:1.2rem;
+    }
+
 }
 
 
@@ -749,6 +908,37 @@ form {
         width:45%;
         height:150px;
     }
+
+    #news{
+        height:auto;
+    padding:3rem 0;
+    }
+
+    .news-outer{
+        min-height:250px;
+    }
+
+    .news-middle{
+        width:35%;
+        padding:1rem;
+    }
+
+    .news-middle h2{
+        font-size:1.7rem;
+    }   
+
+    .news-right{
+        width:35%;
+    }
+
+    .news-right input{
+        width:65%;
+    }
+
+    .news-right button{
+        padding:.8rem 1.3rem;
+        font-size:1rem;
+    }   
 }
 
 
@@ -940,7 +1130,71 @@ form {
 
     .choose-left i{
         font-size:2.5rem;
-    }
+    } 
+    #news{
+    height:auto;
+    padding:3rem 0;
+}
+
+.news-outer{
+    flex-direction:column;
+    gap:2rem;
+    padding:2rem;
+}
+
+.news-left{
+    width:100%;
+    height:220px;
+    border-radius:15px;
+}
+
+.news-middle{
+    width:100%;
+    text-align:center;
+}
+
+.news-middle h2{
+    font-size:2rem;
+}
+
+.news-middle p{
+    width:90%;
+}
+
+.news-right{
+    width:100%;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.news-right input{
+    width:100%;
+    height:50px;
+}
+
+.news-right button{
+    width:100%;
+    padding:1rem;
+}
+
+/* Footer */
+
+footer{
+    height:auto;
+    padding:1rem 0;
+}
+
+.footer-out{
+    flex-direction:column;
+    gap:1rem;
+}
+
+.footer-left,
+.footer-right{
+    width:100%;
+    justify-content:center;
+}
+
 
 
 }
@@ -1015,6 +1269,32 @@ form {
         width:75%;
     }
 
+    .news-left{
+    height:180px;
+}
+
+.news-middle h2{
+    font-size:1.6rem;
+}
+
+.news-middle p{
+    font-size:.95rem;
+}
+
+.news-right button{
+    font-size:1rem;
+}
+
+.footer-left p{
+    font-size:.9rem;
+    text-align:center;
+}
+
+.footer-right i{
+    font-size:1.3rem;
+}
+
+
 
 }
 
@@ -1060,6 +1340,7 @@ form {
     .choose-right p{
         font-size:.9rem;
     }
+    
 
 }
 
@@ -1115,6 +1396,47 @@ form {
         padding:.8rem;
     }
 
+
+    .news-outer{
+    width:95%;
+    padding:1.5rem;
+}
+
+.news-left{
+    height:160px;
+}
+
+.news-middle h2{
+    font-size:1.4rem;
+}
+
+.news-middle p{
+    font-size:.9rem;
+}
+
+.news-right input{
+    height:45px;
+    padding-left:1rem;
+}
+
+.news-right button{
+    font-size:.95rem;
+    padding:.9rem;
+}
+
+.footer-left p{
+    font-size:.8rem;
+}
+
+.footer-right{
+    gap:.8rem;
+}
+
+.footer-right i{
+    font-size:1.2rem;
+}
+    
+
 }
 
 
@@ -1148,6 +1470,18 @@ form {
     .choose-head h1{
         font-size:1.4rem;
     }
+
+    .news-middle h2{
+    font-size:1.25rem;
+}
+
+.news-middle p{
+    font-size:.85rem;
+}
+
+.news-right button{
+    font-size:.9rem;
+}
 }
 
 
@@ -1156,7 +1490,7 @@ form {
 
 
 @media (max-width:320px) {
-    
+
     .navbar-icons span {
         gap:.3rem;
     }
@@ -1200,4 +1534,34 @@ form {
     .choose-head h1{
         font-size:1.4rem;
     }
+
+    .news-middle h2{
+    font-size:1.1rem;
+}
+
+.news-middle p{
+    font-size:.8rem;
+}
+
+.news-right input{
+    height:42px;
+    font-size:.8rem;
+}
+
+.news-right button{
+    font-size:.85rem;
+    padding:.8rem;
+}
+
+.footer-left p{
+    font-size:.75rem;
+}
+
+.footer-right{
+    gap:.5rem;
+}
+
+.footer-right i{
+    font-size:1rem;
+}
 }
