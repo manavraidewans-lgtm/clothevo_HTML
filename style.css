@@ -876,8 +876,50 @@ form {
 
 
 
+/*      FOOTER      */
+footer {
+    margin-bottom: 0.4rem;
+    height: 6.5vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-color: grey;
+}
 
 
+.footer-out {
+    height: 100%;
+    width: 90%;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-left p {
+    color: white;
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-right i {
+    font-size: 1.5rem;
+    color: #fff;
+}
 
 
 
