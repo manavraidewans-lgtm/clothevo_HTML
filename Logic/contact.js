@@ -60,3 +60,6 @@ function goToCart() {
     window.location.href = "../Pages/cart.html";
 }
 
+function goToAbout() {
+    window.location.href = "../Pages/about.html";
+}

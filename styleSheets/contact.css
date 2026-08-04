@@ -5,16 +5,16 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body {
-    background-color: rgb(212, 178, 178)
-}
-
 
 /*       HEADER      */
 header {
     min-height:90vh;
     width: 100%;
-    background-color: rgb(189, 230, 230);
+    /* background-color: rgb(189, 230, 230); */
+    background-image: url("../Assets/contct-hero\ .jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     position: relative;
 }
@@ -101,6 +101,11 @@ header {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+.navbar-links ul li a.active {
+    color: gold;
+}
+
 
 
 
@@ -272,6 +277,70 @@ form {
     color: #fff;
 }
 
+
+/*      TEXT HERO       */
+
+.about-hero-content{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background:rgba(0,0,0,.09);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    border: none;
+    outline: none;
+}
+
+.about-hero-content h2{
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    color: rgb(246, 246, 246);
+}
+
+.about-hero-content p{
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: rgb(210, 210, 210);
+}
+
+.about-hero-but {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-hero-but button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(226, 206, 89);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.5s linear;
+}
+
+.about-hero-but button:hover {
+    background: transparent;
+    border: 1.5px solid gold;
+    color: white;
+} 
+
+
+
+#new {
+    color: gold;
+    font-weight: 600;
+}
 
 
 
