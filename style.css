@@ -1039,10 +1039,20 @@ footer {
 }
 
 #like {
-    padding: 0.5rem;
-    border-radius: 50%;
-    border: 1px solid grey;
-    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#like i{
+    font-size: 1.4rem;
+    color: grey;
+    transition: all .3s ease;
+}
+
+#like .active i{
+    color: red;
+    transform: scale(1.2);
 }
 
 

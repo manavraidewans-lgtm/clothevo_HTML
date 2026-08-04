@@ -5,16 +5,17 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body {
-    background-color: rgb(212, 178, 178)
-}
 
 
 /*       HEADER      */
 header {
     min-height:90vh;
     width: 100%;
-    background-color: rgb(189, 230, 230);
+    /* background-color: rgb(189, 230, 230); */
+    background-image: url("../Assets/SHop\ .jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     position: relative;
 }
@@ -66,6 +67,10 @@ header {
     font-size: 1.2rem;
     color: #fff;
     font-weight: 700;
+}
+
+.navbar-links ul li a.active {
+    color: gold;
 }
 
 
@@ -288,6 +293,35 @@ form {
     width: 200px;
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

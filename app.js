@@ -142,3 +142,21 @@ popup.addEventListener("click", (e) => {
 });
 
 
+const favButtons = document.getElementById("like");
+
+favButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        button.classList.toggle("active");
+
+        const icon = button.querySelector("i");
+
+        if (button.classList.contains("active")) {
+            icon.classList.remove("ri-heart-line");
+            icon.classList.add("ri-poker-hearts-fill");
+        } else {
+            icon.classList.remove("ri-heart-fill");
+            icon.classList.add("ri-heart-line");
+        }
+    });
+});
+
