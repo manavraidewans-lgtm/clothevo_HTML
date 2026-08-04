@@ -80,3 +80,9 @@ searchBtn.addEventListener("mouseleave", () => {
 function goTOCollection() {
     window.location.href = "Pages/shop.html";
 }
+
+
+// trend //
+function trend() {
+    window.location.href = "#trending";
+}

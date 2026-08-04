@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -723,6 +724,89 @@ form {
 
 
 
+/*          STORY           */
+
+#story {
+    min-height:45vh;
+    width:100%;
+    padding:3rem 0;
+    /* background-color: aquamarine; */
+}
+
+
+.story-outer {
+    height: 90%;
+    width: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-left {
+    min-height:450px;
+    width: 40%;
+    /* background-color: olivedrab; */
+    background-color: rgb(190, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#story-head {
+    width: 60%;
+    text-align: start;
+    color: gold;
+    font-weight: 700;
+}
+
+.story-left h1 {
+    width: 60%;
+    color: rgb(90, 89, 89);
+}
+
+.story-left p {
+    width: 60%;
+    color: rgb(81, 80, 80);
+}
+
+.story-left-but {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+}
+
+.story-left-but button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    color: grey;
+    font-weight: 900;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+
+.story-right {
+    width:60%;
+    min-height:450px;
+    background-image:url("Assets/story.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+
+
+
+
 
 
 
@@ -780,6 +864,25 @@ form {
         width:15.5%;
     }
 
+    #story{
+        height:auto;
+        padding:3rem 0;
+    }
+
+    .story-outer{
+        width:95%;
+        margin:auto;
+    }
+
+    .story-left h1,
+    .story-left p,
+    #story-head,
+    .story-left-but{
+        width:80%;
+    }
+
+
+
 }
 
 
@@ -834,6 +937,18 @@ form {
     .trend-card{
         width:30%;
         height:330px;
+    }
+
+    .story-left{
+        width:45%;
+    }
+
+    .story-right{
+        width:55%;
+    }
+
+    .story-left h1{
+        font-size:2rem;
     }
 
 }
@@ -1035,6 +1150,24 @@ form {
         height:320px;
     }
 
+    #story{
+        height:auto;
+        padding:2rem 0;
+    }
+
+    .story-outer{
+        flex-direction:column-reverse;
+    }
+
+    .story-left,
+    .story-right{
+        width:100%;
+    }
+
+    .story-right{
+        min-height:300px;
+    }
+
     
 }
 
@@ -1111,8 +1244,64 @@ header{
         height:340px;
     }
 
+    .story-right{
+        height:300px;
+    }
+
+    .story-left h1{
+        font-size:1.8rem;
+    }
+
+    .story-left p{
+        font-size:.95rem;
+    }
+
+    .story-left-but button{
+        font-size:1rem;
+    }
+
 }
 
+
+
+@media (max-width:480px){
+
+    #trending{
+        padding:2rem 1rem;
+    }
+
+    .trending-up h1{
+        font-size:1.8rem;
+    }
+
+    .trending-middle{
+        gap:.8rem;
+    }
+
+    .trending-middle button{
+        font-size:.9rem;
+        padding:.4rem 1rem;
+    }
+
+    .trend-card{
+        width:95%;
+        height:330px;
+    }
+
+    .story-right{
+        height:250px;
+    }
+
+    .story-left{
+        padding:1.5rem 1rem;
+    }
+
+    .story-left h1{
+        font-size:1.6rem;
+    }
+
+
+}
 
 
 
@@ -1176,35 +1365,13 @@ header{
     .text h3{
         font-size:1.5rem;
     }
+
+    
 }
 
 
 
-@media (max-width:480px){
 
-    #trending{
-        padding:2rem 1rem;
-    }
-
-    .trending-up h1{
-        font-size:1.8rem;
-    }
-
-    .trending-middle{
-        gap:.8rem;
-    }
-
-    .trending-middle button{
-        font-size:.9rem;
-        padding:.4rem 1rem;
-    }
-
-    .trend-card{
-        width:95%;
-        height:330px;
-    }
-
-}
 
 
 
@@ -1250,6 +1417,18 @@ header{
     }
 
     .trend-des p{
+        font-size:.9rem;
+    }
+
+    .story-right{
+        height:220px;
+    }
+
+    .story-left h1{
+        font-size:1.4rem;
+    }
+
+    .story-left p{
         font-size:.9rem;
     }
 
@@ -1300,6 +1479,18 @@ header{
     .trend-card{
         width:100%;
         height:280px;
+    }
+
+    .story-right{
+        height:200px;
+    }
+
+    .story-left h1{
+        font-size:1.2rem;
+    }
+
+    .story-left-but button{
+        font-size:.9rem;
     }
 
 }
