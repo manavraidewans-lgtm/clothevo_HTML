@@ -10,11 +10,16 @@ body {
 }
 
 
+
 /*       HEADER      */
 header {
     min-height:90vh;
     width: 100%;
-    background-color: rgb(189, 230, 230);
+    /* background-color: rgb(189, 230, 230); */
+    background-image: url("../Assets/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     position: relative;
 }
@@ -68,6 +73,9 @@ header {
     font-weight: 700;
 }
 
+.navbar-links ul li a.active {
+    color: gold;
+}
 
 
 .navbar-icons {
@@ -120,6 +128,81 @@ header {
 
 
 
+/*      HErO ABOUT       */
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.30);
+    z-index:-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-content{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background:rgba(0,0,0,.09);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    border: none;
+    outline: none;
+}
+
+.about-hero-content h2{
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.about-hero-content p{
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: rgb(210, 210, 210);
+}
+
+.about-hero-but {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-hero-but button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(226, 206, 89);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.5s linear;
+}
+
+.about-hero-but button:hover {
+    background: transparent;
+    border: 1.5px solid gold;
+    color: white;
+} 
+
+
+
+#new {
+    color: gold;
+    font-weight: 600;
+}
 
 
 
@@ -272,6 +355,21 @@ form {
     color: #fff;
 }
 
+#searchInp {
+    width: 0;
+    opacity: 0;
+    padding: 0.3rem;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.8s ease;
+}
+
+#searchInp.active {
+    width: 14rem;
+    opacity: 1;
+}
 
 
 
@@ -308,24 +406,49 @@ form {
 
 @media (max-width:1200px){
 
-.navbar-links ul{
-    width:100%;
-    gap:2rem;
-}
+    .navbar-links ul{
+        width:100%;
+        gap:2rem;
+    }
+
+    .about-hero-content{
+        left:30%;
+    }
+
+    .about-hero-content h2{
+        font-size:2.2rem;
+    }
 
 }
 
 
 @media (max-width:992px){
 
-.navbar-links ul li a{
-    font-size:1rem;
-}
+    .navbar-links ul li a{
+        font-size:1rem;
+    }   
 
-.navbar-icons span{
-    gap:1rem;
-}
+    .navbar-icons span{
+        gap:1rem;
+    }
 
+    header{
+        min-height:80vh;
+    }
+
+    .about-hero-content{
+        left:35%;
+        width:55%;
+    }
+
+    .about-hero-content h2{
+        font-size:2rem;
+        letter-spacing:3px;
+    }
+
+    .about-hero-content p{
+        font-size:1.05rem;
+    }
 }
 
 
@@ -430,6 +553,34 @@ form {
         margin-right:15px;
     }
 
+
+    header{
+        min-height:75vh;
+    }
+
+    .about-hero-content{
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        width:85%;
+        padding:2rem 1rem;
+    }
+
+    .about-hero-content h2{
+        font-size:2rem;
+        letter-spacing:2px;
+    }
+
+    .about-hero-content p{
+        font-size:1rem;
+    }
+
+    .about-hero-but button{
+        padding:.9rem 2rem;
+        font-size:1rem;
+    }
+
+
 }
 
 
@@ -437,13 +588,29 @@ form {
 
 @media (max-width:576px){
 
-header{
-    min-height:90vh;
-}
+    header{
+        min-height:90vh;
+    }
 
-.login-heading h1{
-    font-size:2.2rem;
-}
+    .login-heading h1{
+        font-size:2.2rem;
+    }
+
+    header{
+        min-height:70vh;
+    }
+
+    .about-hero-content{
+        width:90%;
+    }
+
+    .about-hero-content h2{
+        font-size:1.8rem;
+    }
+
+    .about-hero-content p{
+        font-size:.95rem;
+    }
 
 }
 
@@ -455,39 +622,65 @@ header{
 
 @media (max-width:425px){
 
-.navbar-logo img{
-    width:50px;
-}
+    .navbar-logo img{
+        width:50px;
+    }
 
-.navbar-icons span{
-    gap:.5rem;
-}
+    .navbar-icons span{
+        gap:.5rem;
+    }
 
-.navbar-icons i{
-    font-size:1rem;
-}
+    .navbar-icons i{
+        font-size:1rem;
+    }
 
-.login-heading h1{
-    font-size:1.8rem;
-}
+    .login-heading h1{
+        font-size:1.8rem;
+    }
 
-.form-card label,
-.remember-me label{
-    font-size:1rem;
-}
+    .form-card label,
+    .remember-me label{
+        font-size:1rem;
+    }
 
-.form-card button{
-    width:100%;
-    font-size:1rem;
-    padding:.8rem;
-}
+    .form-card button{
+        width:100%;
+        font-size:1rem;
+        padding:.8rem;
+    }
+
+    .about-hero-content{
+        width:92%;
+        padding:1.5rem 1rem;
+    }
+
+    .about-hero-content h2{
+        font-size:1.5rem;
+        letter-spacing:1px;
+    }
+
+    .about-hero-content p{
+        font-size:.9rem;
+    }
+
+    .about-hero-but button{
+        width:100%;
+        font-size:.95rem;
+        padding:.8rem;
+    }
 
 }
 
 
 
 @media (max-width:375px){
+    .about-hero-content h2{
+        font-size:1.35rem;
+    }
 
+    .about-hero-content p{
+        font-size:.85rem;
+    }   
 }
 
 
@@ -496,12 +689,24 @@ header{
 
 @media (max-width:320px){
 
-.navbar-icons span{
-    gap:.3rem;
-}
+        .navbar-icons span{
+        gap:.3rem;
+    }
 
-.navbar-icons button{
-    padding:.2rem;
-}
+    .navbar-icons button{
+        padding:.2rem;
+    }
+    
+    .about-hero-content{
+        width:95%;
+    }
+
+    .about-hero-content h2{
+        font-size:1.2rem;
+    }
+
+    .about-hero-but button{
+        font-size:.85rem;
+    }
 
 }

@@ -60,7 +60,7 @@ function goToCart() {
     window.location.href = "Pages/cart.html";
 }
 
-// hover
+// hover search
 const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInp");
 

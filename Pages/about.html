@@ -33,7 +33,7 @@
             <div class="navbar-links" id="navLinks">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="active">About</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -44,6 +44,7 @@
 
                     <button>
                         <i class="ri-search-line"></i>
+                        <input type="text" id="searchInp" placeholder="Search Your Item">
                     </button>
                     
                     <button id="login-btn">
@@ -120,6 +121,27 @@
 
             </div>
 
+        </div>
+
+
+        <!-- Dark Overlay -->
+        <div class="overlay"></div>
+
+
+        <!-- Text -->
+        <div class="about-hero-content">
+            <p id="new">About Us</p>
+            <h2>We're More Than<br>Just A Clothing Brand</h2>
+            <p id="new-2">Timeless fashion for everyone. <br>
+                Crafted for comfort, made to stand out.
+            </p>
+
+            <div class="about-hero-but">
+                <button onclick="goToShop()">
+                    SHOP NOW
+                    <i class="ri-arrow-right-long-line"></i>
+                </button>
+            </div>
         </div>
 
 
