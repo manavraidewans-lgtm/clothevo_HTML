@@ -140,3 +140,5 @@ popup.addEventListener("click", (e) => {
     }
 
 });
+
+
