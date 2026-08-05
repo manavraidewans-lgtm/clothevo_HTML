@@ -692,7 +692,7 @@ const products = [
 
 
 
-
+// show card //
 const cardsOuter = document.querySelector(".cards-outer");
 
 function displayProducts(arr){
@@ -702,8 +702,7 @@ function displayProducts(arr){
     arr.forEach(product=>{
 
         cardsOuter.innerHTML += `
-        
-        <div class="product-card">
+        <div class="product-card" onclick="showProduct(${product.id})">
 
             <img src="${product.image}" alt="${product.name}">
 
@@ -910,3 +909,60 @@ reset.addEventListener("click",()=>{
 });
 
 updateProducts();
+
+
+
+
+// popup of the card //
+const popup=document.getElementById("productPopup");
+
+function showProduct(id){
+
+    const product=products.find(p=>p.id===id);
+
+    document.getElementById("popupImage").src=product.image;
+
+    document.getElementById("popupName").innerText=product.name;
+
+    document.getElementById("popupBrand").innerText=product.brand;
+
+    document.getElementById("popupType").innerText=
+        product.category+" • "+product.type;
+
+    document.getElementById("popupPrice").innerText=
+        "₹"+product.price;
+
+    document.getElementById("popupOldPrice").innerText=
+        "₹"+product.oldPrice;
+
+    document.getElementById("popupRating").innerText=
+        "⭐ "+product.rating+" ("+product.reviews+" Reviews)";
+
+    document.getElementById("popupStock").innerText=
+        "Stock : "+product.stock;
+
+    document.getElementById("popupSizes").innerText=
+        product.sizes.join(", ");
+
+    document.getElementById("popupColors").innerText=
+        product.colors.join(", ");
+
+    popup.classList.add("show");
+
+}
+
+document.getElementById("popupClose").onclick=function(){
+
+    popup.classList.remove("show");
+
+}
+
+popup.onclick=function(e){
+
+    if(e.target===popup){
+
+        popup.classList.remove("show");
+
+    }
+
+}
