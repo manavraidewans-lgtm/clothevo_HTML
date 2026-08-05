@@ -753,7 +753,7 @@ displayProducts(products);
 
 
 
-
+// sort by //
 const sortSelect = document.getElementById("sorting");
 
 sortSelect.addEventListener("change", () => {
@@ -772,3 +772,141 @@ sortSelect.addEventListener("change", () => {
     displayProducts(sortedProducts);
 
 });
+
+
+// aside //
+const men = document.getElementById("men");
+const women = document.getElementById("women");
+const uni = document.getElementById("uni");
+
+const searchBar = document.getElementById("search-bar");
+const sorting = document.getElementById("sorting");
+const reset = document.getElementById("reset");
+
+const categoryItems = document.querySelectorAll("#categoryList li");
+
+let selectedCategory = "";
+
+categoryItems.forEach(item => {
+
+    item.addEventListener("click", () => {
+
+        categoryItems.forEach(li => li.classList.remove("active"));
+
+        if(selectedCategory === item.dataset.category){
+
+            selectedCategory = "";
+
+        }else{
+
+            selectedCategory = item.dataset.category;
+            item.classList.add("active");
+
+        }
+
+        updateProducts();
+
+    });
+
+});
+
+function updateProducts(){
+
+    let filtered = [...products];
+
+    // SEARCH
+
+    const text = searchBar.value.toLowerCase();
+
+    if(text){
+
+        filtered = filtered.filter(product =>
+
+            product.name.toLowerCase().includes(text) ||
+
+            product.type.toLowerCase().includes(text) ||
+
+            product.brand.toLowerCase().includes(text)
+
+        );
+
+    }
+
+    // GENDER
+
+    if(men.checked || women.checked || uni.checked){
+
+        filtered = filtered.filter(product =>
+
+            (men.checked && product.category === "Men") ||
+
+            (women.checked && product.category === "Women") ||
+
+            (uni.checked && product.category === "Unisex")
+
+        );
+
+    }
+
+    // CATEGORY
+
+    if(selectedCategory){
+
+        filtered = filtered.filter(product =>
+
+            product.type === selectedCategory
+
+        );
+
+    }
+
+    // SORT
+
+    if(sorting.value === "Low"){
+
+        filtered.sort((a,b)=>a.price-b.price);
+
+    }
+
+    else if(sorting.value === "High"){
+
+        filtered.sort((a,b)=>b.price-a.price);
+
+    }
+
+    displayProducts(filtered);
+
+}
+
+// EVENTS
+
+searchBar.addEventListener("input",updateProducts);
+
+sorting.addEventListener("change",updateProducts);
+
+men.addEventListener("change",updateProducts);
+
+women.addEventListener("change",updateProducts);
+
+uni.addEventListener("change",updateProducts);
+
+// CLEAR BUTTON
+
+reset.addEventListener("click",()=>{
+
+    men.checked=false;
+    women.checked=false;
+    uni.checked=false;
+
+    searchBar.value="";
+    sorting.value="";
+
+    selectedCategory="";
+
+    categoryItems.forEach(li=>li.classList.remove("active"));
+
+    updateProducts();
+
+});
+
+updateProducts();
