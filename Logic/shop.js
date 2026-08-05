@@ -710,6 +710,10 @@ function displayProducts(arr){
 
                 <h3>${product.name}</h3>
 
+                <div class="wishlist" onclick="toggleWishlist(event,this)">
+                <i class="ri-heart-line"></i>
+                </div>
+
                 <p class="product-brand">${product.brand}</p>
 
                 <span class="product-type">
@@ -963,6 +967,26 @@ popup.onclick=function(e){
 
         popup.classList.remove("show");
 
+    }
+
+}
+
+
+// for wishlist //
+function toggleWishlist(event, heart){
+
+    event.stopPropagation();
+
+    heart.classList.toggle("active");
+
+    const icon = heart.querySelector("i");
+
+    if(heart.classList.contains("active")){
+        icon.classList.remove("ri-heart-line");
+        icon.classList.add("ri-heart-fill");
+    }else{
+        icon.classList.remove("ri-heart-fill");
+        icon.classList.add("ri-heart-line");
     }
 
 }

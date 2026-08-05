@@ -739,6 +739,46 @@ form {
 
 }
 
+.product-card{
+    position:relative;
+}
+
+.wishlist{
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    width:45px;
+    height:45px;
+
+    background:white;
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.wishlist i{
+    font-size:22px;
+    color:#555;
+    transition:.3s;
+}
+
+.wishlist.active i{
+    color:red;
+}
+
+.wishlist:hover{
+    transform:scale(1.1);
+}
+
 
 
 
