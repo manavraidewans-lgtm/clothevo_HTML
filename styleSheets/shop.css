@@ -359,7 +359,7 @@ form {
 }
 
 .aside {
-    height: 90%;
+    height: 100%;
     width: 20%;
     background-color: rgb(220, 218, 218);
     position: sticky;
@@ -494,10 +494,17 @@ form {
 
 
 .cards-outer{
-    width:100%;
+    flex:1;
+    overflow-y:auto;
+    overflow-x:hidden;
+
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
     gap:1.5rem;
+
+    align-items:start;        /* ADD THIS */
+    grid-auto-rows:max-content; /* ADD THIS */
+
     padding:1rem;
 }
 
@@ -508,13 +515,16 @@ form {
     box-shadow:0 5px 20px rgba(0,0,0,.08);
     transition:.3s;
     cursor:pointer;
+    min-height: 520px;
 }
+
 
 .product-card:hover{
     transform:translateY(-8px);
 }
 
 .product-card img{
+    display: block;
     width:100%;
     height:300px;
     object-fit:cover;
@@ -580,6 +590,77 @@ form {
     color:black;
 }
 
+.check{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      FOOTER      */
+footer {
+    margin-top: 6rem;
+    margin-bottom: 0.4rem;
+    height: 6.5vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-color: grey;
+}
+
+
+.footer-out {
+    height: 100%;
+    width: 90%;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-left p {
+    color: white;
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-right i {
+    font-size: 1.5rem;
+    color: #fff;
+}
 
 
 
@@ -842,6 +923,8 @@ form {
         width:95%;
         height:auto;
         gap:2rem;
+        align-items:center;     /* NEW */
+        text-align:center;
     }
 
     .cards-section{
@@ -887,6 +970,34 @@ form {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    footer{
+        height:auto;
+        padding:15px 0;
+    }
+
+    .footer-out{
+        width:95%;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+    }
+
+    .footer-left,
+    .footer-right{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .footer-left p{
+        font-size:0.95rem;
+    }
+
+    .footer-right i{
+        font-size:1.8rem;
     }
 }
 
@@ -1009,6 +1120,19 @@ header{
     .card-section-top input{
         font-size:.9rem;
     }
+
+    .footer-left p{
+        font-size:0.85rem;
+        line-height:1.5;
+    }
+
+    .footer-right{
+        gap:20px;
+    }
+
+    .footer-right i{
+        font-size:1.6rem;
+    }
     
 }
 
@@ -1052,6 +1176,18 @@ header{
 
     .sort select{
         font-size:.85rem;
+    }
+
+    .footer-left p{
+        font-size:0.75rem;
+    }
+
+    .footer-right{
+        gap:12px;
+    }
+
+    .footer-right i{
+        font-size:1.4rem;
     }
 
 }
