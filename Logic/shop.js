@@ -750,3 +750,25 @@ function displayProducts(arr){
 }
 
 displayProducts(products);
+
+
+
+
+const sortSelect = document.getElementById("sorting");
+
+sortSelect.addEventListener("change", () => {
+
+    let sortedProducts = [...products];
+
+    if (sortSelect.value === "Low") {
+        sortedProducts.sort((a, b) => a.price - b.price);
+    }
+
+    else if (sortSelect.value === "High") {
+        sortedProducts.sort((a, b) => b.price - a.price);
+    }
+
+    // Featured (original order)
+    displayProducts(sortedProducts);
+
+});
