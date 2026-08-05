@@ -371,7 +371,7 @@ form {
     border-radius: 20px;
     /* overflow: hidden; */
     padding: 1rem;
-    gap: 6rem;
+    gap: 1rem;
     overflow-y:auto;
 }
 
@@ -381,7 +381,7 @@ form {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .categories {
@@ -435,6 +435,10 @@ form {
     /* transform: translateY(-5px); */
 }
 
+#categoryList li.active{
+    color:black;
+    font-weight:900;
+}
 
 
 .cards-section {
@@ -661,6 +665,7 @@ footer {
     font-size: 1.5rem;
     color: #fff;
 }
+
 
 
 
